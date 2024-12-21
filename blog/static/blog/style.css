@@ -1,0 +1,45 @@
+html, body {
+    height: 100%; /* Ensures the body takes up the full viewport height */
+    margin: 0;
+}
+
+.content {
+    min-height: calc(100vh - 50px); /* Subtracts footer height (50px) from the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background: #343a40; /* Dark footer background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Add some padding */
+}
+
+.card {
+    height: 100%; /* Make all cards stretch to the same height */
+    display: flex; /* Enable flexbox for inner alignment */
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: space-between; /* Space content evenly */
+}
+
+.card img {
+    object-fit: cover; /* Ensure images fit their containers without distortion */
+    height: 150px; /* Set a fixed height for images */
+    width: 100%; /* Ensure full width for all images */
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure consistent spacing */
+}
+
+.post-image {
+    height: 150px; /* Fixed height for uniformity */
+    width: 100%; /* Stretch to full width */
+    object-fit: cover; /* Crop image to fit container */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+
